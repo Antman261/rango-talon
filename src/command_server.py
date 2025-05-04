@@ -17,7 +17,7 @@ def send_request_and_wait(command: dict) -> Any:
     with clip.revert():
         _set_transient_clipboard_text(json_message)
         actions.user.rango_type_hotkey()
-        response = _read_json_response_with_timeout(3.0)
+        response = _read_json_response_with_timeout(0.5)
 
     return response
 

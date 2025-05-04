@@ -15,4 +15,4 @@ _hotkey = (
 @ctx.action_class("user")
 class UserActions:
     def rango_type_hotkey():
-        actions.key(_hotkey)
+        actions.key("ctrl-shift-keypad_3")
